@@ -1,0 +1,20 @@
+# action.yml
+name: 'RIPS Security Scan'
+author: 'RIPS Technologies GmbH'
+description: 'Performs a security scan on a remote RIPS server'
+inputs:
+  application-id:
+    description: 'ID of the application the scan belongs to'
+    required: true
+  additional-parameters:
+    description: 'Additional parameters. (https://kb.ripstech.com/display/DOC/RIPS+CLI)'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.application-id }}
+    - ${{ inputs.additional-parameters }}
+branding:
+  icon: shield
+  color: yellow
