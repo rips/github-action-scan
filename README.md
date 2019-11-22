@@ -1,8 +1,9 @@
 # RIPS Security Scan
-This action performs a scan on your project located at `$GITHUB_WORKSPACE`.
+[RIPS](https://www.ripstech.com) is a static code analysis solution to automatically find security issues in your code.
+This action performs a security scan of your project's code located at `$GITHUB_WORKSPACE`.
 
 ## Usage
-This example starts a new analysis and configures a security gateway that is triggered if there are more than 10 critical issues.
+You can use the following configuration to start a new code analysis with RIPS and to add a security gate that fails vulnerable builds when, for example, more than 10 critical issues are detected.
 
 ```yaml
 steps:
@@ -19,6 +20,6 @@ steps:
     additional-parameters: -t critical:10 
 ```
 
-- The `application-id` can be found in the RIPS user interface.
+- The `application-id` can be found in the [RIPS user interface](https://kb.ripstech.com/doc/latest/user-guide/applications/application-overview).
 - The `secrets` have to be configured in the repository settings ([GitHub documentation](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)).
-- The documentation for the `additiona-parameters` is located at: https://kb.ripstech.com/display/DOC/RIPS+CLI
+- The documentation for the `additional-parameters` is located at: https://kb.ripstech.com/display/DOC/RIPS+CLI
