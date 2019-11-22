@@ -1,7 +1,7 @@
 # action.yml
 name: 'RIPS Security Scan'
 author: 'RIPS Technologies GmbH'
-description: 'Performs a security scan (static code analysis) on your on-premises RIPS installation or via our Software-as-a-Service solution.'
+description: 'Performs a security scan (static code analysis) via your RIPS installation (On-Premises or SaaS).'
 inputs:
   application-id:
     description: 'Id of the application the scan belongs to'
