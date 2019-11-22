@@ -21,4 +21,4 @@ steps:
 
 - The `application-id` can be found in the RIPS user interface.
 - The `secrets` have to be configured in the repository settings ([GitHub documentation](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)).
-- The documentation for the `additiona-parameters` is located at: https://kb.ripstech.com/display/DOC/RIPS+CLI
+- The documentation for the `additional-parameters` is located at: https://kb.ripstech.com/display/DOC/RIPS+CLI
