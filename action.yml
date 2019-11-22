@@ -4,10 +4,10 @@ author: 'RIPS Technologies GmbH'
 description: 'Performs a security scan (static code analysis) on your on-premises RIPS installation or via our Software-as-a-Service solution.'
 inputs:
   application-id:
-    description: 'ID of the application the scan belongs to'
+    description: 'Id of the application the scan belongs to'
     required: true
   additional-parameters:
-    description: 'Additional parameters. (https://kb.ripstech.com/display/DOC/RIPS+CLI)'
+    description: 'Additional parameters. (https://kb.ripstech.com/doc/latest/tooling/rips-cli)'
     required: false
 runs:
   using: 'docker'
